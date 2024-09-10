@@ -5,7 +5,7 @@ export default {
   namespaced: true,
   state() {
     return {
-      projects: [{title: 'Black T-sh', description:'Free'}],
+      projects: [],
     };
   },
   mutations: mutations,
