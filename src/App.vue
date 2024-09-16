@@ -3,7 +3,7 @@
     <TheLogin v-if="!isLoggedIn" />
     <v-app v-if="isLoggedIn" id="referanceForTeleport">
       <TheNavbar />
-      <v-content class="mx-4">
+      <v-content class="">
         <router-view></router-view>
       </v-content>
     </v-app>
