@@ -1,15 +1,14 @@
 <template>
   <div>
-    <SubHeading title="Dashboard" />
-    <TheContainer>
-    
-    </TheContainer>
+    <HeroSection/>
+   
   </div>
 </template>
 
 <script>
+import HeroSection from '@/components/HeroSection.vue';
 export default {
-  components: {  },
+  components: { HeroSection },
   data() {
     return {
    

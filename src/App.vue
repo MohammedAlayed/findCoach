@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-   
-    <v-app id="referanceForTeleport">
-      <TheNavbar/>
+    <TheLogin v-if="!isLoggedIn" />
+    <v-app v-if="isLoggedIn" id="referanceForTeleport">
+      <TheNavbar />
       <v-content class="mx-4">
         <router-view></router-view>
       </v-content>
@@ -11,22 +11,27 @@
 </template>
 
 <script>
-import TheNavbar from './layout/TheNavbar'
+import TheNavbar from "./layout/TheNavbar";
+import TheLogin from "./views/TheLogin.vue";
+
 export default {
-  
-  name: 'App',
+  name: "App",
   components: {
-    TheNavbar
-  }
-}
+    TheNavbar,
+    TheLogin,
+  },
+  data() {
+    return {
+      isLoggedIn: true,
+    };
+  },
+};
 </script>
 
-<style >
-*{
+<style>
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-
 </style>
