@@ -13,9 +13,10 @@ Vue.component("TheContainer", TheContainer);
 
 Vue.use(Vuetify, {
   theme: {
-    primary: "#3f51b5",
-    secondary: "#b0bec5",
-    accent: "#8c9eff",
+    primary: "#344153",
+    secondary: "#69728A",
+    bgSec: "#E2E8F0",
+    bgFieldSec: "#F1F5F9",
     error: "#b71c1c",
   },
   rtl: false, //

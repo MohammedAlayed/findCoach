@@ -5,7 +5,7 @@ import Router from "vue-router";
 
 // Import your components
 
-import Dashboard from "@/views/TheDashboard.vue";
+import Dashboard from "@/views/HomePage.vue";
 
 Vue.use(Router);
 
