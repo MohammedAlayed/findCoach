@@ -6,6 +6,7 @@ import Router from "vue-router";
 // Import your components
 
 import Dashboard from "@/views/HomePage.vue";
+import TheLogin from "@/views/TheLogin.vue";
 
 Vue.use(Router);
 
@@ -17,6 +18,11 @@ const router = new Router({
       path: "*",
       name: "NotFound",
       component: Dashboard,
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: TheLogin,
     },
   ],
 });

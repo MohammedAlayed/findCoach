@@ -20,6 +20,10 @@ Vue.use(Vuetify, {
     error: "#b71c1c",
   },
   rtl: false, //
+  typography: {
+
+    fontWeightsemiBold: 600,
+  },
 });
 
 Vue.config.productionTip = false;
