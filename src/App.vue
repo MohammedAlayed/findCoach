@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <TheLogin v-if="!isLoggedIn" />
-    <v-app v-if="isLoggedIn" id="referanceForTeleport">
+    <v-app id="referenceForTeleport">
       <TheNavbar />
-      <v-content class="">
+      
+      
+      <v-content >
         <router-view></router-view>
+        <TheFooter v-if="isLoggedIn" />
       </v-content>
     </v-app>
   </div>
@@ -12,17 +14,17 @@
 
 <script>
 import TheNavbar from "./layout/TheNavbar";
-import TheLogin from "./views/TheLogin.vue";
+import TheFooter from "./layout/TheFooter.vue";
 
 export default {
   name: "App",
   components: {
     TheNavbar,
-    TheLogin,
+    TheFooter,
   },
   data() {
     return {
-      isLoggedIn: true,
+      isLoggedIn: false,
     };
   },
 };
